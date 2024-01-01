@@ -1,0 +1,382 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;
+    background-image: url(bg.jpg);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.welcome h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.welcome p{
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color:#000000;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.3rem solid #000000;
+    color:#000000;
+    cursor: pointer;
+    background: none;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background: #000000;
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#eee;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#000000;
+}
+
+.header .logo i{
+    color:#000000;
+}
+
+.header .navbar a{
+    font-size: 2rem; 
+    margin: 1rem;
+    color:#020202;
+    font-weight: bolder;
+}
+
+.header .navbar a:hover{
+    color:#000000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.header .icons :hover{
+    font-size: 3rem;
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:#000000;
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: #000000;
+    color:#fff;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:35rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a{
+    color:#000000;
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(dude.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 27rem;
+    padding-bottom: 20rem;
+}
+
+.services{
+    /* background-image: url(black.jpg); */
+    background-color: #000000;
+}
+.services h1{
+    font-family: 'Calligraffitti', cursive;
+    font-family: 'Unbounded', cursive;
+    color: #eee;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr) );
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    padding: 3rem 2rem;
+    background: #000000;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+#box{
+    background-color: #eee;
+}
+.services .box-container .box:hover{
+    outline-offset: 0rem;
+}
+.services .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #000000;
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #000000;
+}
+.about .aboutus{
+    text-align: center;
+    font-size: 3rem;
+    color: #eee;
+}
+.about .aboutus h1{
+    padding-top: 10rem;
+    color: #eee;
+    font-size: 5rem;
+}
+.about p{
+    padding-top: rem;
+    font-size: 2rem;
+    color: #eee;
+}
+.footer{
+    background: #fff;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1rem;
+}
+.footer .box-container .box a{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#000000;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding:1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color:#000000;
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 1rem;
+    height: 1rem;
+    display: block;
+}
+.credit{
+    bottom:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#000000;
+    box-shadow: var(--box-shadow);
+}
+.credit a{
+    color: #fff;
+    /* color: #212f3d; */
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%; right:-110%;
+        width:30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right:2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .box-container .box{
+        margin: 2rem auto;
+    }
+
+}
